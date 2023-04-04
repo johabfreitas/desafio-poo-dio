@@ -1,7 +1,4 @@
-import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.*;
 
 import java.time.LocalDate;
 
@@ -57,6 +54,17 @@ public class Main {
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
+
+        System.out.println("-------");
+        System.out.println("Vagas de Emprego");
+        //Vagas vagas = new Vagas("Nordeste Tecnologia","Analista de sistemas", "Home Office", "Brasil", "Pleno");
+        Vagas vagas = new Vagas();
+        vagas.setEmpresa("Nordeste Tecnologia");
+        vagas.setCargo("Analista de sistemas");
+        vagas.setModalidade("Home office");
+        vagas.setLocalidade("Brasil");
+        vagas.setDescricao("Plano");
+        System.out.println(vagas);
 
     }
 
